@@ -1,0 +1,63 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-viberbotmanagment-staging-112049-authRole",
+      "UnauthRoleArn": "arn:aws:iam::845731139956:role/amplify-viberbotmanagment-staging-112049-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::845731139956:role/amplify-viberbotmanagment-staging-112049-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-viberbotmanagment-staging-112049-deployment",
+      "UnauthRoleName": "amplify-viberbotmanagment-staging-112049-unauthRole",
+      "StackName": "amplify-viberbotmanagment-staging-112049",
+      "StackId": "arn:aws:cloudformation:eu-west-2:845731139956:stack/amplify-viberbotmanagment-staging-112049/d05df2d0-1ee7-11ed-9373-069d228f943c",
+      "AmplifyAppId": "d2v40jji9n1q39"
+    }
+  },
+  "auth": {
+    "Viberbotmanagment": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL",
+          "NAME"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-viberbotmanagment-staging-112049-deployment/amplify-cfn-templates/auth/Viberbotmanagment-cloudformation-template.json",
+        "logicalId": "authViberbotmanagment"
+      },
+      "lastPushTimeStamp": "2022-08-18T11:28:32.350Z",
+      "output": {
+        "UserPoolId": "eu-west-2_braExnvMB",
+        "AppClientIDWeb": "7q4o3dbfik2r3om9m2g6nntsoa",
+        "AppClientID": "5isbf6assltem5tp6mldjjup94",
+        "IdentityPoolId": "eu-west-2:9927a83d-388e-481e-a3a0-8873f07cd323",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-2:845731139956:userpool/eu-west-2_braExnvMB",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "Viberbotmanagment"
+      },
+      "lastPushDirHash": "ooOcLKfDCSAhXC3GbKOaf/UixD8="
+    }
+  }
+}
