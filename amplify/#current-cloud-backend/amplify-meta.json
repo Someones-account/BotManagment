@@ -20,9 +20,7 @@
       "customAuth": false,
       "frontendAuthConfig": {
         "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
+        "usernameAttributes": [],
         "signupAttributes": [
           "EMAIL",
           "NAME"
@@ -47,17 +45,17 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-viberbotmanagment-staging-112049-deployment/amplify-cfn-templates/auth/Viberbotmanagment-cloudformation-template.json",
         "logicalId": "authViberbotmanagment"
       },
-      "lastPushTimeStamp": "2022-08-18T11:28:32.350Z",
+      "lastPushTimeStamp": "2022-08-22T10:11:20.724Z",
       "output": {
-        "UserPoolId": "eu-west-2_braExnvMB",
-        "AppClientIDWeb": "7q4o3dbfik2r3om9m2g6nntsoa",
-        "AppClientID": "5isbf6assltem5tp6mldjjup94",
-        "IdentityPoolId": "eu-west-2:9927a83d-388e-481e-a3a0-8873f07cd323",
-        "UserPoolArn": "arn:aws:cognito-idp:eu-west-2:845731139956:userpool/eu-west-2_braExnvMB",
+        "UserPoolId": "eu-west-2_p7OsRe8mO",
+        "AppClientIDWeb": "3eu8c2u17cdnorais7ukv8qdfm",
+        "AppClientID": "7ufdeerumqsjc9575b6b9vf8r0",
+        "IdentityPoolId": "eu-west-2:696a6503-3906-40d3-98bd-e6124052fe0c",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-2:845731139956:userpool/eu-west-2_p7OsRe8mO",
         "IdentityPoolName": "testAuthIdentityPool__staging",
         "UserPoolName": "Viberbotmanagment"
       },
-      "lastPushDirHash": "ooOcLKfDCSAhXC3GbKOaf/UixD8="
+      "lastPushDirHash": "etZjqGFfGbRm/0MBlOGYv2lglZY="
     }
   }
 }

@@ -3,7 +3,7 @@
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "viberbf9815054",
+    "resourceNameTruncated": "viberba003c82b",
     "userPoolName": "Viberbotmanagment",
     "autoVerifiedAttributes": [
       "email"
@@ -32,15 +32,12 @@
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "Viberbf9815054_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "Viberba003c82b_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "f9815054",
+    "sharedId": "a003c82b",
     "resourceName": "Viberbotmanagment",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",
-    "usernameAttributes": [
-      "email"
-    ],
     "useDefault": "manual",
     "userPoolGroups": false,
     "userPoolGroupList": [],

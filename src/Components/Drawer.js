@@ -1,5 +1,5 @@
 import * as React from "react";
-import { NavigationContainer } from "@react-navigation/native";
+// import { NavigationContainer } from "@react-navigation/native";
 import TabNavigator from "./TabNavigation";
 import {
   createDrawerNavigator,
@@ -54,6 +54,8 @@ const DrawerContents = () => {
   );
 };
 
-export default function AppDrawer() {
+const AppDrawer = () => {
   return <DrawerContents />;
-}
+};
+
+export default AppDrawer;

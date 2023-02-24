@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-viberbotmanagment-staging-112049-authRole",
+      "UnauthRoleArn": "arn:aws:iam::845731139956:role/amplify-viberbotmanagment-staging-112049-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::845731139956:role/amplify-viberbotmanagment-staging-112049-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-viberbotmanagment-staging-112049-deployment",
+      "UnauthRoleName": "amplify-viberbotmanagment-staging-112049-unauthRole",
+      "StackName": "amplify-viberbotmanagment-staging-112049",
+      "StackId": "arn:aws:cloudformation:eu-west-2:845731139956:stack/amplify-viberbotmanagment-staging-112049/d05df2d0-1ee7-11ed-9373-069d228f943c",
+      "AmplifyAppId": "d2v40jji9n1q39"
+    },
+    "categories": {
+      "auth": {
+        "Viberbotmanagment": {}
+      }
+    }
+  }
+}
