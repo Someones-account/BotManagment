@@ -8,7 +8,7 @@ import AuthentifictionPage from "./AuthentificationPage";
 const Tab = createMaterialBottomTabNavigator();
 
 const screenHandler = ({ route }) => ({
-  tabBarIcon: (focused, color, size) => {
+  tabBarIcon: (focused, color) => {
     let iconName;
     let rn = route.name;
 
@@ -20,7 +20,7 @@ const screenHandler = ({ route }) => ({
       iconName = focused ? "settings" : "settings-outline";
     }
 
-    return <Ionicons name={iconName} size={size} color={color}></Ionicons>;
+    return <Ionicons name={iconName} size={20} color={color}></Ionicons>;
   },
 });
 
