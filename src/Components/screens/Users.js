@@ -16,7 +16,6 @@ const cellButton = (toggler, userId) => {
   return(<TouchableOpacity onPress={() => toggler(userId)}>
     <View style={styles.button}>
       <Text style={{ marginHorizontal: 10, marginVertical: 5 }}>Manage</Text>
-      <Text>{userId}</Text>
     </View>
   </TouchableOpacity>
   )

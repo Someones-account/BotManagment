@@ -3,20 +3,21 @@ import { useState } from "react";
 import { Button, View } from "react-native";
 import { Text, TextInput, StyleSheet } from "react-native";
 
-requestURL = "https://npcfi5v8r2.execute-api.eu-west-2.amazonaws.com/prod/users"
+const requestURL = "https://npcfi5v8r2.execute-api.eu-west-2.amazonaws.com/prod/users"
 
 const ModifyUser = ({toggler, displayState, user}) => {
   const [username, setUsername] = useState("");
   const [access, setAccess] = useState("");
 
   const changeUser = async (user_id, username, group_id) => {
+    const requestBody = {"user_id": user_id, "username": username, "group_id": group_id}
     await fetch(requestURL, {
     method: "PATCH",
     mode: "cors",
     cache: "no-cache",
     credentials: "same-origin",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({user_id: user_id, username: username, group_id: group_id}), 
+    body: JSON.stringify(requestBody), 
     redirect: "follow",
     referrerPolicy: "no-referrer",
     });
