@@ -1,6 +1,10 @@
 import AppDrawer from "./src/Components/Drawer";
 import { NavigationContainer } from "@react-navigation/native";
 import { Amplify } from "aws-amplify";
+import { SignInFooter } from "./src/Components/Authentication/SignInFooter";
+import { Footer } from "./src/Components/Authentication/Footer";
+import { Header } from "./src/Components/Authentication/Header";
+import { SignInHeader } from "./src/Components/Authentication/SignInHeader";
 import awsconfig from "./src/aws-exports";
 import { withAuthenticator } from "aws-amplify-react-native";
 
@@ -17,38 +21,49 @@ const App = () => {
 };
 
 const signUpConfig = {
-  header: "My Customized Sign Up",
-  hideAllDefaults: true,
-  signUpFields: [
-    {
-      label: "Full name",
-      key: "name",
-      required: true,
-      displayOrder: 1,
-      type: "string",
+  components: {
+    Header,
+    SignIn: {
+      Header: SignInHeader,
+      Footer: SignInFooter
     },
-    {
-      label: "Email",
-      key: "email",
-      required: true,
-      displayOrder: 2,
-      type: "string",
-    },
-    {
-      label: "Username",
-      key: "preferred_username",
-      required: true,
-      displayOrder: 3,
-      type: "string",
-    },
-    {
-      label: "Password",
-      key: "password",
-      required: true,
-      displayOrder: 4,
-      type: "password",
-    },
-  ],
-};
+    Footer
+  }
+}
+
+// const signUpConfig = {
+//   header: "My Customized Sign Up",
+//   hideAllDefaults: true,
+//   signUpFields: [
+//     {
+//       label: "Full name",
+//       key: "name",
+//       required: true,
+//       displayOrder: 1,
+//       type: "string",
+//     },
+//     {
+//       label: "Email",
+//       key: "email",
+//       required: true,
+//       displayOrder: 2,
+//       type: "string",
+//     },
+//     {
+//       label: "Username",
+//       key: "preferred_username",
+//       required: true,
+//       displayOrder: 3,
+//       type: "string",
+//     },
+//     {
+//       label: "Password",
+//       key: "password",
+//       required: true,
+//       displayOrder: 4,
+//       type: "password",
+//     },
+//   ],
+// };
 
 export default withAuthenticator(App, { signUpConfig });

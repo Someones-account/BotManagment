@@ -21,15 +21,6 @@ const cellButton = (toggler, userId) => {
   )
 };
 
-const AddUserButton = () => {
-  return (
-    <TouchableOpacity style={styles.addButton}>
-      <Ionicons name="add-outline" size={30} />
-      <Text>Add</Text>
-    </TouchableOpacity>
-  );
-};
-
 const Users = () => {
   const headers = ["Username", "ViberID", "Manage"];
   const requestURL =
@@ -90,7 +81,6 @@ const Users = () => {
         </ScrollView>
       </View>
       <ModifyUser toggler={toggleOverlay} displayState={overlayVisible} user={activeUser} />
-      <AddUserButton />
     </View>
   );
 };
